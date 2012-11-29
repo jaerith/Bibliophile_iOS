@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04078D180FF496790058A85C /* LocationMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04078D170FF496790058A85C /* LocationMenuController.m */; };
+		04078D1B0FF496B50058A85C /* AllBookLocationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04078D1A0FF496B50058A85C /* AllBookLocationsController.m */; };
+		04078D1E0FF496DD0058A85C /* BooksByCurrentLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04078D1D0FF496DD0058A85C /* BooksByCurrentLocationController.m */; };
+		04078E0D0FF6C3E90058A85C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04078E0C0FF6C3E90058A85C /* CoreLocation.framework */; };
+		040F0B9C0FED89FB00A4BCAA /* SIBLByRefSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 040F0B9B0FED89FB00A4BCAA /* SIBLByRefSelector.m */; };
+		040F0BC80FED8EAE00A4BCAA /* SIBLByBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040F0BC70FED8EAE00A4BCAA /* SIBLByBookController.m */; };
+		040F0BCB0FED8ED400A4BCAA /* SIBLByPerformerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040F0BCA0FED8ED400A4BCAA /* SIBLByPerformerController.m */; };
+		040F0EA40FEEC60300A4BCAA /* SIBLByFoundSongController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040F0EA30FEEC60300A4BCAA /* SIBLByFoundSongController.m */; };
+		040F11DC0FEEE5B500A4BCAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040F11DB0FEEE5B500A4BCAA /* UIKit.framework */; };
+		040F121F0FEEE5D600A4BCAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040F121E0FEEE5D600A4BCAA /* Foundation.framework */; };
+		040F122D0FEEE62C00A4BCAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040F122C0FEEE62C00A4BCAA /* CoreGraphics.framework */; };
+		040F127E0FEEE64600A4BCAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040F127D0FEEE64600A4BCAA /* AVFoundation.framework */; };
+		040F12820FEEE65100A4BCAA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040F12810FEEE65100A4BCAA /* AudioToolbox.framework */; };
+		040F12860FEEE65C00A4BCAA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040F12850FEEE65C00A4BCAA /* MediaPlayer.framework */; };
+		0423522110079F350015DA41 /* GIBL.dat in Resources */ = {isa = PBXBuildFile; fileRef = 0423522010079F350015DA41 /* GIBL.dat */; };
+		04235223100A258A0015DA41 /* BookSearchPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04235222100A258A0015DA41 /* BookSearchPicker.xib */; };
+		04235239100A2C730015DA41 /* BookSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04235238100A2C730015DA41 /* BookSearchController.m */; };
+		042352D9100C46850015DA41 /* GIBL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 042352D8100C46850015DA41 /* GIBL.plist */; };
+		042352DC100C46D70015DA41 /* GIBLSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042352DB100C46D70015DA41 /* GIBLSelectionController.m */; };
+		044466280FE7583100865103 /* SampleChapterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044466270FE7583100865103 /* SampleChapterController.m */; };
+		0444662B0FE759A000865103 /* SampleChapter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0444662A0FE759A000865103 /* SampleChapter.xib */; };
+		0444669B0FE8249A00865103 /* MyLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444669A0FE8249A00865103 /* MyLibraryViewController.m */; };
+		0444695D0FE8698600865103 /* Atlas_Shrugged.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 044469580FE8698600865103 /* Atlas_Shrugged.JPG */; };
+		0444695E0FE8698600865103 /* Dune.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 044469590FE8698600865103 /* Dune.JPG */; };
+		0444695F0FE8698600865103 /* Ender's_Game.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0444695A0FE8698600865103 /* Ender's_Game.jpg */; };
+		044469600FE8698600865103 /* The_Count_of_Monte_Cristo.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0444695B0FE8698600865103 /* The_Count_of_Monte_Cristo.JPG */; };
+		044469610FE8698600865103 /* War_and_Peace.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0444695C0FE8698600865103 /* War_and_Peace.JPG */; };
+		044469680FE8699D00865103 /* Atlas_Shrugged.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469630FE8699D00865103 /* Atlas_Shrugged.txt */; };
+		044469690FE8699D00865103 /* Dune.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469640FE8699D00865103 /* Dune.txt */; };
+		0444696A0FE8699D00865103 /* Ender's_Game.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469650FE8699D00865103 /* Ender's_Game.txt */; };
+		0444696B0FE8699D00865103 /* The_Count_of_Monte_Cristo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469660FE8699D00865103 /* The_Count_of_Monte_Cristo.txt */; };
+		0444696C0FE8699D00865103 /* War_and_Peace.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469670FE8699D00865103 /* War_and_Peace.txt */; };
+		0444697F0FE86A9400865103 /* Atlas_Shrugged.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0444697A0FE86A9400865103 /* Atlas_Shrugged.JPG */; };
+		044469800FE86A9400865103 /* Dune.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0444697B0FE86A9400865103 /* Dune.JPG */; };
+		044469810FE86A9400865103 /* Enders_Game.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0444697C0FE86A9400865103 /* Enders_Game.jpg */; };
+		044469820FE86A9400865103 /* The_Count_of_Monte_Cristo.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0444697D0FE86A9400865103 /* The_Count_of_Monte_Cristo.JPG */; };
+		044469830FE86A9400865103 /* War_and_Peace.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 0444697E0FE86A9400865103 /* War_and_Peace.JPG */; };
+		044469890FE86AAF00865103 /* Atlas_Shrugged.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469840FE86AAF00865103 /* Atlas_Shrugged.txt */; };
+		0444698A0FE86AAF00865103 /* Dune.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469850FE86AAF00865103 /* Dune.txt */; };
+		0444698B0FE86AAF00865103 /* Enders_Game.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469860FE86AAF00865103 /* Enders_Game.txt */; };
+		0444698C0FE86AAF00865103 /* The_Count_of_Monte_Cristo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469870FE86AAF00865103 /* The_Count_of_Monte_Cristo.txt */; };
+		0444698D0FE86AAF00865103 /* War_and_Peace.txt in Resources */ = {isa = PBXBuildFile; fileRef = 044469880FE86AAF00865103 /* War_and_Peace.txt */; };
+		04449B37100EEB3B00D23F82 /* BookSearchGenericController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04449B36100EEB3B00D23F82 /* BookSearchGenericController.m */; };
+		04449C181012954F00D23F82 /* Sample_Books.Categories.dat in Resources */ = {isa = PBXBuildFile; fileRef = 04449C171012954F00D23F82 /* Sample_Books.Categories.dat */; };
+		04449CAC1013BB9C00D23F82 /* BookSearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04449CAB1013BB9C00D23F82 /* BookSearchResultsController.m */; };
+		04449E2A1013DFCF00D23F82 /* antagonist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04449E291013DFCF00D23F82 /* antagonist.jpg */; };
+		04449E2C1013DFDE00D23F82 /* battle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04449E2B1013DFDE00D23F82 /* battle.jpg */; };
+		04449E2E1013DFF400D23F82 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 04449E2D1013DFF400D23F82 /* book.png */; };
+		04449E301013E00600D23F82 /* protagonist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04449E2F1013E00600D23F82 /* protagonist.jpg */; };
+		04449F091015E46F00D23F82 /* parthenon_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04449F081015E46F00D23F82 /* parthenon_icon.png */; };
+		04449F0B1015E48100D23F82 /* hearst_building.png in Resources */ = {isa = PBXBuildFile; fileRef = 04449F0A1015E48100D23F82 /* hearst_building.png */; };
+		047B0B4C0FC86E61005ED555 /* FileParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B0B4B0FC86E61005ED555 /* FileParser.m */; };
+		047B0B4E0FC871FC005ED555 /* SIBL.dat in Resources */ = {isa = PBXBuildFile; fileRef = 047B0B4D0FC871FC005ED555 /* SIBL.dat */; };
+		047B14B70FC8B621005ED555 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B14B60FC8B621005ED555 /* RootViewController.m */; };
+		047B14FC0FC8BBBF005ED555 /* SecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B14FB0FC8BBBF005ED555 /* SecondLevelViewController.m */; };
+		047B15550FC9080F005ED555 /* BookSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B15540FC9080F005ED555 /* BookSelectionController.m */; };
+		047B15580FC90896005ED555 /* BookTraitsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B15570FC90896005ED555 /* BookTraitsController.m */; };
+		047B155E0FC908F3005ED555 /* BookQuotesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B155D0FC908F3005ED555 /* BookQuotesController.m */; };
+		047B15610FC9092F005ED555 /* BookCharsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B15600FC9092F005ED555 /* BookCharsController.m */; };
+		047B15640FC90945005ED555 /* BookCharDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B15630FC90945005ED555 /* BookCharDetailsController.m */; };
+		047B15670FC9095B005ED555 /* BookQuoteDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B15660FC9095B005ED555 /* BookQuoteDetailsController.m */; };
+		047B156E0FC96068005ED555 /* CharDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047B156D0FC96068005ED555 /* CharDetail.xib */; };
+		047B15710FC9622C005ED555 /* QuoteDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047B15700FC9622C005ED555 /* QuoteDetail.xib */; };
+		048AA7B60FD1D34300C2DCC4 /* Books_Subset.xml in Resources */ = {isa = PBXBuildFile; fileRef = 048AA7B50FD1D34300C2DCC4 /* Books_Subset.xml */; };
+		048AA9320FD4E93500C2DCC4 /* Books_Subset.dat in Resources */ = {isa = PBXBuildFile; fileRef = 048AA9310FD4E93500C2DCC4 /* Books_Subset.dat */; };
+		048AA96D0FD7610C00C2DCC4 /* Books_Subset.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048AA96C0FD7610C00C2DCC4 /* Books_Subset.plist */; };
+		049D4A7010F3D12D00EF461E /* Books.MoreQuotes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 049D4A6F10F3D12D00EF461E /* Books.MoreQuotes.xml */; };
+		049D4C0510F69DCB00EF461E /* All_Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049D4C0410F69DCB00EF461E /* All_Books.plist */; };
+		049D4C9910F7DAA000EF461E /* SIBL.001.dat in Resources */ = {isa = PBXBuildFile; fileRef = 049D4C9810F7DAA000EF461E /* SIBL.001.dat */; };
+		049D4CA610F7DBF600EF461E /* SIBL_By_Book.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049D4CA410F7DBF600EF461E /* SIBL_By_Book.plist */; };
+		049D4CA710F7DBF600EF461E /* SIBL_By_Performer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 049D4CA510F7DBF600EF461E /* SIBL_By_Performer.plist */; };
+		04AC69871108173D007196AD /* Bibliophile_Icon_New.png in Resources */ = {isa = PBXBuildFile; fileRef = 04AC69861108173D007196AD /* Bibliophile_Icon_New.png */; };
+		04AC6A9E110D0497007196AD /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04AC6A9D110D0497007196AD /* Entitlements.plist */; };
+		04B698800FEBE03700C42293 /* MagicQuoteBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6987F0FEBE03700C42293 /* MagicQuoteBall.m */; };
+		04B698840FEBE31500C42293 /* MagicQuoteBall.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B698830FEBE31500C42293 /* MagicQuoteBall.xib */; };
+		04C011230FFC5DE500E5FA55 /* YCQMPickQuoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C011220FFC5DE500E5FA55 /* YCQMPickQuoteController.m */; };
+		04C0117F0FFC678800E5FA55 /* bn_logo_small.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04C0117E0FFC678800E5FA55 /* bn_logo_small.gif */; };
+		04C011820FFC67CA00E5FA55 /* YCQMImageSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C011810FFC67CA00E5FA55 /* YCQMImageSelection.m */; };
+		04C011920FFC685B00E5FA55 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C011910FFC685B00E5FA55 /* QuartzCore.framework */; };
+		04C0121F0FFC728A00E5FA55 /* YCQMImageSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C0121E0FFC728A00E5FA55 /* YCQMImageSelection.xib */; };
+		04C012C50FFEA73F00E5FA55 /* camera1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 04C012C40FFEA73F00E5FA55 /* camera1.wav */; };
+		04C01419100170E000E5FA55 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C01418100170E000E5FA55 /* MessageUI.framework */; };
+		04C0159E1005B10B00E5FA55 /* BBL_Africa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C015911005B10B00E5FA55 /* BBL_Africa.plist */; };
+		04C0159F1005B10B00E5FA55 /* BBL_Asia.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C015921005B10B00E5FA55 /* BBL_Asia.plist */; };
+		04C015A01005B10B00E5FA55 /* BBL_Australia.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C015931005B10B00E5FA55 /* BBL_Australia.plist */; };
+		04C015A11005B10B00E5FA55 /* BBL_Europe_East.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C015941005B10B00E5FA55 /* BBL_Europe_East.plist */; };
+		04C015A21005B10B00E5FA55 /* BBL_Europe_West.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C015951005B10B00E5FA55 /* BBL_Europe_West.plist */; };
+		04C015A31005B10B00E5FA55 /* BBL_Middle_East.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C015961005B10B00E5FA55 /* BBL_Middle_East.plist */; };
+		04C015A41005B10B00E5FA55 /* BBL_Other.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C015971005B10B00E5FA55 /* BBL_Other.plist */; };
+		04C015A51005B10B00E5FA55 /* BBL_South_America.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C015981005B10B00E5FA55 /* BBL_South_America.plist */; };
+		04C015A61005B10B00E5FA55 /* BBL_US_Atlantic_North.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C015991005B10B00E5FA55 /* BBL_US_Atlantic_North.plist */; };
+		04C015A71005B10B00E5FA55 /* BBL_US_Atlantic_South.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C0159A1005B10B00E5FA55 /* BBL_US_Atlantic_South.plist */; };
+		04C015A81005B10B00E5FA55 /* BBL_US_Central.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C0159B1005B10B00E5FA55 /* BBL_US_Central.plist */; };
+		04C015A91005B10B00E5FA55 /* BBL_US_Mountain.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C0159C1005B10B00E5FA55 /* BBL_US_Mountain.plist */; };
+		04C015AA1005B10B00E5FA55 /* BBL_US_Pacific.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C0159D1005B10B00E5FA55 /* BBL_US_Pacific.plist */; };
+		04CB800F101A838900E5AD92 /* ExploreTheWorld.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CB800E101A838900E5AD92 /* ExploreTheWorld.xib */; };
+		04CB8013101A84DC00E5AD92 /* ExploreTheWorldController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB8012101A84DC00E5AD92 /* ExploreTheWorldController.m */; };
+		04CB8015101A851F00E5AD92 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CB8014101A851F00E5AD92 /* MapKit.framework */; };
+		04CB80A0101CADDB00E5AD92 /* CBBL_Sample.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04CB809F101CADDB00E5AD92 /* CBBL_Sample.plist */; };
+		04CB80A2101CADEF00E5AD92 /* PBBL_Sample.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04CB80A1101CADEF00E5AD92 /* PBBL_Sample.plist */; };
+		04CB8115101D37F900E5AD92 /* ETWAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB8114101D37F900E5AD92 /* ETWAnnotationView.m */; };
+		04CB81D8101E957600E5AD92 /* ETWMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB81D7101E957600E5AD92 /* ETWMapView.m */; };
+		04CB822A101EBCFB00E5AD92 /* ETWSearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB8229101EBCFB00E5AD92 /* ETWSearchResultsController.m */; };
+		1D3623260D0F684500981E51 /* BiblioPhileAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BiblioPhileAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04078D160FF496790058A85C /* LocationMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMenuController.h; sourceTree = "<group>"; };
+		04078D170FF496790058A85C /* LocationMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMenuController.m; sourceTree = "<group>"; };
+		04078D190FF496B50058A85C /* AllBookLocationsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBookLocationsController.h; sourceTree = "<group>"; };
+		04078D1A0FF496B50058A85C /* AllBookLocationsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBookLocationsController.m; sourceTree = "<group>"; };
+		04078D1C0FF496DD0058A85C /* BooksByCurrentLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksByCurrentLocationController.h; sourceTree = "<group>"; };
+		04078D1D0FF496DD0058A85C /* BooksByCurrentLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksByCurrentLocationController.m; sourceTree = "<group>"; };
+		04078E0C0FF6C3E90058A85C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		040F0B9A0FED89FB00A4BCAA /* SIBLByRefSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIBLByRefSelector.h; sourceTree = "<group>"; };
+		040F0B9B0FED89FB00A4BCAA /* SIBLByRefSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBLByRefSelector.m; sourceTree = "<group>"; };
+		040F0BC60FED8EAE00A4BCAA /* SIBLByBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIBLByBookController.h; sourceTree = "<group>"; };
+		040F0BC70FED8EAE00A4BCAA /* SIBLByBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBLByBookController.m; sourceTree = "<group>"; };
+		040F0BC90FED8ED400A4BCAA /* SIBLByPerformerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIBLByPerformerController.h; sourceTree = "<group>"; };
+		040F0BCA0FED8ED400A4BCAA /* SIBLByPerformerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBLByPerformerController.m; sourceTree = "<group>"; };
+		040F0EA20FEEC60200A4BCAA /* SIBLByFoundSongController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIBLByFoundSongController.h; sourceTree = "<group>"; };
+		040F0EA30FEEC60300A4BCAA /* SIBLByFoundSongController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIBLByFoundSongController.m; sourceTree = "<group>"; };
+		040F11DB0FEEE5B500A4BCAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = "<group>"; };
+		040F121E0FEEE5D600A4BCAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = "<group>"; };
+		040F122C0FEEE62C00A4BCAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<group>"; };
+		040F127D0FEEE64600A4BCAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = "<group>"; };
+		040F12810FEEE65100A4BCAA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
+		040F12850FEEE65C00A4BCAA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = ../../../../Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = "<group>"; };
+		0423522010079F350015DA41 /* GIBL.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GIBL.dat; sourceTree = "<group>"; };
+		04235222100A258A0015DA41 /* BookSearchPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookSearchPicker.xib; sourceTree = "<group>"; };
+		04235237100A2C730015DA41 /* BookSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSearchController.h; sourceTree = "<group>"; };
+		04235238100A2C730015DA41 /* BookSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSearchController.m; sourceTree = "<group>"; };
+		042352D8100C46850015DA41 /* GIBL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GIBL.plist; sourceTree = "<group>"; };
+		042352DA100C46D70015DA41 /* GIBLSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIBLSelectionController.h; sourceTree = "<group>"; };
+		042352DB100C46D70015DA41 /* GIBLSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIBLSelectionController.m; sourceTree = "<group>"; };
+		044466260FE7583100865103 /* SampleChapterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleChapterController.h; sourceTree = "<group>"; };
+		044466270FE7583100865103 /* SampleChapterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleChapterController.m; sourceTree = "<group>"; };
+		0444662A0FE759A000865103 /* SampleChapter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleChapter.xib; sourceTree = "<group>"; };
+		044466990FE8249A00865103 /* MyLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLibraryViewController.h; sourceTree = "<group>"; };
+		0444669A0FE8249A00865103 /* MyLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLibraryViewController.m; sourceTree = "<group>"; };
+		044469580FE8698600865103 /* Atlas_Shrugged.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Atlas_Shrugged.JPG; sourceTree = "<group>"; };
+		044469590FE8698600865103 /* Dune.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dune.JPG; sourceTree = "<group>"; };
+		0444695A0FE8698600865103 /* Ender's_Game.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ender's_Game.jpg"; sourceTree = "<group>"; };
+		0444695B0FE8698600865103 /* The_Count_of_Monte_Cristo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = The_Count_of_Monte_Cristo.JPG; sourceTree = "<group>"; };
+		0444695C0FE8698600865103 /* War_and_Peace.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = War_and_Peace.JPG; sourceTree = "<group>"; };
+		044469630FE8699D00865103 /* Atlas_Shrugged.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Atlas_Shrugged.txt; sourceTree = "<group>"; };
+		044469640FE8699D00865103 /* Dune.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dune.txt; sourceTree = "<group>"; };
+		044469650FE8699D00865103 /* Ender's_Game.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Ender's_Game.txt"; sourceTree = "<group>"; };
+		044469660FE8699D00865103 /* The_Count_of_Monte_Cristo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = The_Count_of_Monte_Cristo.txt; sourceTree = "<group>"; };
+		044469670FE8699D00865103 /* War_and_Peace.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = War_and_Peace.txt; sourceTree = "<group>"; };
+		0444697A0FE86A9400865103 /* Atlas_Shrugged.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Atlas_Shrugged.JPG; sourceTree = "<group>"; };
+		0444697B0FE86A9400865103 /* Dune.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dune.JPG; sourceTree = "<group>"; };
+		0444697C0FE86A9400865103 /* Enders_Game.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Enders_Game.jpg; sourceTree = "<group>"; };
+		0444697D0FE86A9400865103 /* The_Count_of_Monte_Cristo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = The_Count_of_Monte_Cristo.JPG; sourceTree = "<group>"; };
+		0444697E0FE86A9400865103 /* War_and_Peace.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = War_and_Peace.JPG; sourceTree = "<group>"; };
+		044469840FE86AAF00865103 /* Atlas_Shrugged.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Atlas_Shrugged.txt; sourceTree = "<group>"; };
+		044469850FE86AAF00865103 /* Dune.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dune.txt; sourceTree = "<group>"; };
+		044469860FE86AAF00865103 /* Enders_Game.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Enders_Game.txt; sourceTree = "<group>"; };
+		044469870FE86AAF00865103 /* The_Count_of_Monte_Cristo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = The_Count_of_Monte_Cristo.txt; sourceTree = "<group>"; };
+		044469880FE86AAF00865103 /* War_and_Peace.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = War_and_Peace.txt; sourceTree = "<group>"; };
+		04449B35100EEB3B00D23F82 /* BookSearchGenericController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSearchGenericController.h; sourceTree = "<group>"; };
+		04449B36100EEB3B00D23F82 /* BookSearchGenericController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSearchGenericController.m; sourceTree = "<group>"; };
+		04449C171012954F00D23F82 /* Sample_Books.Categories.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sample_Books.Categories.dat; sourceTree = "<group>"; };
+		04449CAA1013BB9C00D23F82 /* BookSearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSearchResultsController.h; sourceTree = "<group>"; };
+		04449CAB1013BB9C00D23F82 /* BookSearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSearchResultsController.m; sourceTree = "<group>"; };
+		04449E291013DFCF00D23F82 /* antagonist.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = antagonist.jpg; sourceTree = "<group>"; };
+		04449E2B1013DFDE00D23F82 /* battle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = battle.jpg; sourceTree = "<group>"; };
+		04449E2D1013DFF400D23F82 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
+		04449E2F1013E00600D23F82 /* protagonist.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = protagonist.jpg; sourceTree = "<group>"; };
+		04449F081015E46F00D23F82 /* parthenon_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parthenon_icon.png; sourceTree = "<group>"; };
+		04449F0A1015E48100D23F82 /* hearst_building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearst_building.png; sourceTree = "<group>"; };
+		047B0B4A0FC86E61005ED555 /* FileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileParser.h; sourceTree = "<group>"; };
+		047B0B4B0FC86E61005ED555 /* FileParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileParser.m; sourceTree = "<group>"; };
+		047B0B4D0FC871FC005ED555 /* SIBL.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SIBL.dat; sourceTree = "<group>"; };
+		047B14B50FC8B621005ED555 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		047B14B60FC8B621005ED555 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		047B14FA0FC8BBBF005ED555 /* SecondLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondLevelViewController.h; sourceTree = "<group>"; };
+		047B14FB0FC8BBBF005ED555 /* SecondLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevelViewController.m; sourceTree = "<group>"; };
+		047B15530FC9080F005ED555 /* BookSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSelectionController.h; sourceTree = "<group>"; };
+		047B15540FC9080F005ED555 /* BookSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookSelectionController.m; sourceTree = "<group>"; };
+		047B15560FC90896005ED555 /* BookTraitsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookTraitsController.h; sourceTree = "<group>"; };
+		047B15570FC90896005ED555 /* BookTraitsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTraitsController.m; sourceTree = "<group>"; };
+		047B155C0FC908F3005ED555 /* BookQuotesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookQuotesController.h; sourceTree = "<group>"; };
+		047B155D0FC908F3005ED555 /* BookQuotesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookQuotesController.m; sourceTree = "<group>"; };
+		047B155F0FC9092F005ED555 /* BookCharsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCharsController.h; sourceTree = "<group>"; };
+		047B15600FC9092F005ED555 /* BookCharsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCharsController.m; sourceTree = "<group>"; };
+		047B15620FC90945005ED555 /* BookCharDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCharDetailsController.h; sourceTree = "<group>"; };
+		047B15630FC90945005ED555 /* BookCharDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCharDetailsController.m; sourceTree = "<group>"; };
+		047B15650FC9095B005ED555 /* BookQuoteDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookQuoteDetailsController.h; sourceTree = "<group>"; };
+		047B15660FC9095B005ED555 /* BookQuoteDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookQuoteDetailsController.m; sourceTree = "<group>"; };
+		047B156D0FC96068005ED555 /* CharDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharDetail.xib; sourceTree = "<group>"; };
+		047B15700FC9622C005ED555 /* QuoteDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteDetail.xib; sourceTree = "<group>"; };
+		048AA7B50FD1D34300C2DCC4 /* Books_Subset.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Books_Subset.xml; sourceTree = "<group>"; };
+		048AA9310FD4E93500C2DCC4 /* Books_Subset.dat */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Books_Subset.dat; sourceTree = "<group>"; };
+		048AA96C0FD7610C00C2DCC4 /* Books_Subset.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Books_Subset.plist; sourceTree = "<group>"; };
+		049D4A6F10F3D12D00EF461E /* Books.MoreQuotes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Books.MoreQuotes.xml; sourceTree = "<group>"; };
+		049D4C0410F69DCB00EF461E /* All_Books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = All_Books.plist; sourceTree = "<group>"; };
+		049D4C9810F7DAA000EF461E /* SIBL.001.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SIBL.001.dat; sourceTree = "<group>"; };
+		049D4CA410F7DBF600EF461E /* SIBL_By_Book.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SIBL_By_Book.plist; sourceTree = "<group>"; };
+		049D4CA510F7DBF600EF461E /* SIBL_By_Performer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SIBL_By_Performer.plist; sourceTree = "<group>"; };
+		04AC69861108173D007196AD /* Bibliophile_Icon_New.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bibliophile_Icon_New.png; sourceTree = "<group>"; };
+		04AC6A9D110D0497007196AD /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		04B6987E0FEBE03700C42293 /* MagicQuoteBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicQuoteBall.h; sourceTree = "<group>"; };
+		04B6987F0FEBE03700C42293 /* MagicQuoteBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicQuoteBall.m; sourceTree = "<group>"; };
+		04B698830FEBE31500C42293 /* MagicQuoteBall.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagicQuoteBall.xib; sourceTree = "<group>"; };
+		04C011210FFC5DE500E5FA55 /* YCQMPickQuoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCQMPickQuoteController.h; sourceTree = "<group>"; };
+		04C011220FFC5DE500E5FA55 /* YCQMPickQuoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCQMPickQuoteController.m; sourceTree = "<group>"; };
+		04C0117E0FFC678800E5FA55 /* bn_logo_small.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bn_logo_small.gif; sourceTree = "<group>"; };
+		04C011800FFC67CA00E5FA55 /* YCQMImageSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCQMImageSelection.h; sourceTree = "<group>"; };
+		04C011810FFC67CA00E5FA55 /* YCQMImageSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCQMImageSelection.m; sourceTree = "<group>"; };
+		04C011910FFC685B00E5FA55 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04C0121E0FFC728A00E5FA55 /* YCQMImageSelection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YCQMImageSelection.xib; sourceTree = "<group>"; };
+		04C012C40FFEA73F00E5FA55 /* camera1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = camera1.wav; sourceTree = "<group>"; };
+		04C01418100170E000E5FA55 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		04C015911005B10B00E5FA55 /* BBL_Africa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_Africa.plist; sourceTree = "<group>"; };
+		04C015921005B10B00E5FA55 /* BBL_Asia.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_Asia.plist; sourceTree = "<group>"; };
+		04C015931005B10B00E5FA55 /* BBL_Australia.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_Australia.plist; sourceTree = "<group>"; };
+		04C015941005B10B00E5FA55 /* BBL_Europe_East.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_Europe_East.plist; sourceTree = "<group>"; };
+		04C015951005B10B00E5FA55 /* BBL_Europe_West.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_Europe_West.plist; sourceTree = "<group>"; };
+		04C015961005B10B00E5FA55 /* BBL_Middle_East.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_Middle_East.plist; sourceTree = "<group>"; };
+		04C015971005B10B00E5FA55 /* BBL_Other.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_Other.plist; sourceTree = "<group>"; };
+		04C015981005B10B00E5FA55 /* BBL_South_America.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_South_America.plist; sourceTree = "<group>"; };
+		04C015991005B10B00E5FA55 /* BBL_US_Atlantic_North.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_US_Atlantic_North.plist; sourceTree = "<group>"; };
+		04C0159A1005B10B00E5FA55 /* BBL_US_Atlantic_South.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_US_Atlantic_South.plist; sourceTree = "<group>"; };
+		04C0159B1005B10B00E5FA55 /* BBL_US_Central.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_US_Central.plist; sourceTree = "<group>"; };
+		04C0159C1005B10B00E5FA55 /* BBL_US_Mountain.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_US_Mountain.plist; sourceTree = "<group>"; };
+		04C0159D1005B10B00E5FA55 /* BBL_US_Pacific.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BBL_US_Pacific.plist; sourceTree = "<group>"; };
+		04CB800E101A838900E5AD92 /* ExploreTheWorld.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreTheWorld.xib; sourceTree = "<group>"; };
+		04CB8011101A84DC00E5AD92 /* ExploreTheWorldController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreTheWorldController.h; sourceTree = "<group>"; };
+		04CB8012101A84DC00E5AD92 /* ExploreTheWorldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreTheWorldController.m; sourceTree = "<group>"; };
+		04CB8014101A851F00E5AD92 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		04CB809F101CADDB00E5AD92 /* CBBL_Sample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CBBL_Sample.plist; sourceTree = "<group>"; };
+		04CB80A1101CADEF00E5AD92 /* PBBL_Sample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PBBL_Sample.plist; sourceTree = "<group>"; };
+		04CB8113101D37F900E5AD92 /* ETWAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETWAnnotationView.h; sourceTree = "<group>"; };
+		04CB8114101D37F900E5AD92 /* ETWAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETWAnnotationView.m; sourceTree = "<group>"; };
+		04CB81D6101E957600E5AD92 /* ETWMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETWMapView.h; sourceTree = "<group>"; };
+		04CB81D7101E957600E5AD92 /* ETWMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETWMapView.m; sourceTree = "<group>"; };
+		04CB8228101EBCFB00E5AD92 /* ETWSearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETWSearchResultsController.h; sourceTree = "<group>"; };
+		04CB8229101EBCFB00E5AD92 /* ETWSearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETWSearchResultsController.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* BiblioPhileAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiblioPhileAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* BiblioPhileAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiblioPhileAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* BiblioPhile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiblioPhile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* BiblioPhile_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiblioPhile_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040F11DC0FEEE5B500A4BCAA /* UIKit.framework in Frameworks */,
+				040F121F0FEEE5D600A4BCAA /* Foundation.framework in Frameworks */,
+				040F122D0FEEE62C00A4BCAA /* CoreGraphics.framework in Frameworks */,
+				040F127E0FEEE64600A4BCAA /* AVFoundation.framework in Frameworks */,
+				040F12820FEEE65100A4BCAA /* AudioToolbox.framework in Frameworks */,
+				040F12860FEEE65C00A4BCAA /* MediaPlayer.framework in Frameworks */,
+				04078E0D0FF6C3E90058A85C /* CoreLocation.framework in Frameworks */,
+				04C011920FFC685B00E5FA55 /* QuartzCore.framework in Frameworks */,
+				04C01419100170E000E5FA55 /* MessageUI.framework in Frameworks */,
+				04CB8015101A851F00E5AD92 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044469570FE8698600865103 /* BookCoverImages */ = {
+			isa = PBXGroup;
+			children = (
+				044469580FE8698600865103 /* Atlas_Shrugged.JPG */,
+				044469590FE8698600865103 /* Dune.JPG */,
+				0444695A0FE8698600865103 /* Ender's_Game.jpg */,
+				0444695B0FE8698600865103 /* The_Count_of_Monte_Cristo.JPG */,
+				0444695C0FE8698600865103 /* War_and_Peace.JPG */,
+			);
+			path = BookCoverImages;
+			sourceTree = "<group>";
+		};
+		044469620FE8699D00865103 /* SampleChapters */ = {
+			isa = PBXGroup;
+			children = (
+				044469630FE8699D00865103 /* Atlas_Shrugged.txt */,
+				044469640FE8699D00865103 /* Dune.txt */,
+				044469650FE8699D00865103 /* Ender's_Game.txt */,
+				044469660FE8699D00865103 /* The_Count_of_Monte_Cristo.txt */,
+				044469670FE8699D00865103 /* War_and_Peace.txt */,
+			);
+			path = SampleChapters;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* BiblioPhileAppDelegate.h */,
+				1D3623250D0F684500981E51 /* BiblioPhileAppDelegate.m */,
+				047B0B4A0FC86E61005ED555 /* FileParser.h */,
+				047B0B4B0FC86E61005ED555 /* FileParser.m */,
+				047B14B50FC8B621005ED555 /* RootViewController.h */,
+				047B14B60FC8B621005ED555 /* RootViewController.m */,
+				047B14FA0FC8BBBF005ED555 /* SecondLevelViewController.h */,
+				047B14FB0FC8BBBF005ED555 /* SecondLevelViewController.m */,
+				047B15530FC9080F005ED555 /* BookSelectionController.h */,
+				047B15540FC9080F005ED555 /* BookSelectionController.m */,
+				047B15560FC90896005ED555 /* BookTraitsController.h */,
+				047B15570FC90896005ED555 /* BookTraitsController.m */,
+				047B155C0FC908F3005ED555 /* BookQuotesController.h */,
+				047B155D0FC908F3005ED555 /* BookQuotesController.m */,
+				047B155F0FC9092F005ED555 /* BookCharsController.h */,
+				047B15600FC9092F005ED555 /* BookCharsController.m */,
+				047B15620FC90945005ED555 /* BookCharDetailsController.h */,
+				047B15630FC90945005ED555 /* BookCharDetailsController.m */,
+				047B15650FC9095B005ED555 /* BookQuoteDetailsController.h */,
+				047B15660FC9095B005ED555 /* BookQuoteDetailsController.m */,
+				044466260FE7583100865103 /* SampleChapterController.h */,
+				044466270FE7583100865103 /* SampleChapterController.m */,
+				044466990FE8249A00865103 /* MyLibraryViewController.h */,
+				0444669A0FE8249A00865103 /* MyLibraryViewController.m */,
+				04B6987E0FEBE03700C42293 /* MagicQuoteBall.h */,
+				04B6987F0FEBE03700C42293 /* MagicQuoteBall.m */,
+				040F0B9A0FED89FB00A4BCAA /* SIBLByRefSelector.h */,
+				040F0B9B0FED89FB00A4BCAA /* SIBLByRefSelector.m */,
+				040F0BC60FED8EAE00A4BCAA /* SIBLByBookController.h */,
+				040F0BC70FED8EAE00A4BCAA /* SIBLByBookController.m */,
+				040F0BC90FED8ED400A4BCAA /* SIBLByPerformerController.h */,
+				040F0BCA0FED8ED400A4BCAA /* SIBLByPerformerController.m */,
+				040F0EA20FEEC60200A4BCAA /* SIBLByFoundSongController.h */,
+				040F0EA30FEEC60300A4BCAA /* SIBLByFoundSongController.m */,
+				04078D160FF496790058A85C /* LocationMenuController.h */,
+				04078D170FF496790058A85C /* LocationMenuController.m */,
+				04078D190FF496B50058A85C /* AllBookLocationsController.h */,
+				04078D1A0FF496B50058A85C /* AllBookLocationsController.m */,
+				04078D1C0FF496DD0058A85C /* BooksByCurrentLocationController.h */,
+				04078D1D0FF496DD0058A85C /* BooksByCurrentLocationController.m */,
+				04C011210FFC5DE500E5FA55 /* YCQMPickQuoteController.h */,
+				04C011220FFC5DE500E5FA55 /* YCQMPickQuoteController.m */,
+				04C011800FFC67CA00E5FA55 /* YCQMImageSelection.h */,
+				04C011810FFC67CA00E5FA55 /* YCQMImageSelection.m */,
+				04235237100A2C730015DA41 /* BookSearchController.h */,
+				04235238100A2C730015DA41 /* BookSearchController.m */,
+				042352DA100C46D70015DA41 /* GIBLSelectionController.h */,
+				042352DB100C46D70015DA41 /* GIBLSelectionController.m */,
+				04449B35100EEB3B00D23F82 /* BookSearchGenericController.h */,
+				04449B36100EEB3B00D23F82 /* BookSearchGenericController.m */,
+				04449CAA1013BB9C00D23F82 /* BookSearchResultsController.h */,
+				04449CAB1013BB9C00D23F82 /* BookSearchResultsController.m */,
+				04CB8011101A84DC00E5AD92 /* ExploreTheWorldController.h */,
+				04CB8012101A84DC00E5AD92 /* ExploreTheWorldController.m */,
+				04CB8113101D37F900E5AD92 /* ETWAnnotationView.h */,
+				04CB8114101D37F900E5AD92 /* ETWAnnotationView.m */,
+				04CB81D6101E957600E5AD92 /* ETWMapView.h */,
+				04CB81D7101E957600E5AD92 /* ETWMapView.m */,
+				04CB8228101EBCFB00E5AD92 /* ETWSearchResultsController.h */,
+				04CB8229101EBCFB00E5AD92 /* ETWSearchResultsController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* BiblioPhile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				04AC6A9D110D0497007196AD /* Entitlements.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* BiblioPhile_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04AC69861108173D007196AD /* Bibliophile_Icon_New.png */,
+				049D4CA410F7DBF600EF461E /* SIBL_By_Book.plist */,
+				049D4CA510F7DBF600EF461E /* SIBL_By_Performer.plist */,
+				049D4C9810F7DAA000EF461E /* SIBL.001.dat */,
+				049D4C0410F69DCB00EF461E /* All_Books.plist */,
+				049D4A6F10F3D12D00EF461E /* Books.MoreQuotes.xml */,
+				04CB80A1101CADEF00E5AD92 /* PBBL_Sample.plist */,
+				04CB809F101CADDB00E5AD92 /* CBBL_Sample.plist */,
+				04449F0A1015E48100D23F82 /* hearst_building.png */,
+				04449F081015E46F00D23F82 /* parthenon_icon.png */,
+				04449E2F1013E00600D23F82 /* protagonist.jpg */,
+				04449E2D1013DFF400D23F82 /* book.png */,
+				04449E2B1013DFDE00D23F82 /* battle.jpg */,
+				04449E291013DFCF00D23F82 /* antagonist.jpg */,
+				04449C171012954F00D23F82 /* Sample_Books.Categories.dat */,
+				042352D8100C46850015DA41 /* GIBL.plist */,
+				0423522010079F350015DA41 /* GIBL.dat */,
+				04C015911005B10B00E5FA55 /* BBL_Africa.plist */,
+				04C015921005B10B00E5FA55 /* BBL_Asia.plist */,
+				04C015931005B10B00E5FA55 /* BBL_Australia.plist */,
+				04C015941005B10B00E5FA55 /* BBL_Europe_East.plist */,
+				04C015951005B10B00E5FA55 /* BBL_Europe_West.plist */,
+				04C015961005B10B00E5FA55 /* BBL_Middle_East.plist */,
+				04C015971005B10B00E5FA55 /* BBL_Other.plist */,
+				04C015981005B10B00E5FA55 /* BBL_South_America.plist */,
+				04C015991005B10B00E5FA55 /* BBL_US_Atlantic_North.plist */,
+				04C0159A1005B10B00E5FA55 /* BBL_US_Atlantic_South.plist */,
+				04C0159B1005B10B00E5FA55 /* BBL_US_Central.plist */,
+				04C0159C1005B10B00E5FA55 /* BBL_US_Mountain.plist */,
+				04C0159D1005B10B00E5FA55 /* BBL_US_Pacific.plist */,
+				04C012C40FFEA73F00E5FA55 /* camera1.wav */,
+				04C0117E0FFC678800E5FA55 /* bn_logo_small.gif */,
+				044469840FE86AAF00865103 /* Atlas_Shrugged.txt */,
+				044469850FE86AAF00865103 /* Dune.txt */,
+				044469860FE86AAF00865103 /* Enders_Game.txt */,
+				044469870FE86AAF00865103 /* The_Count_of_Monte_Cristo.txt */,
+				044469880FE86AAF00865103 /* War_and_Peace.txt */,
+				0444697A0FE86A9400865103 /* Atlas_Shrugged.JPG */,
+				0444697B0FE86A9400865103 /* Dune.JPG */,
+				0444697C0FE86A9400865103 /* Enders_Game.jpg */,
+				0444697D0FE86A9400865103 /* The_Count_of_Monte_Cristo.JPG */,
+				0444697E0FE86A9400865103 /* War_and_Peace.JPG */,
+				044469620FE8699D00865103 /* SampleChapters */,
+				044469570FE8698600865103 /* BookCoverImages */,
+				048AA96C0FD7610C00C2DCC4 /* Books_Subset.plist */,
+				048AA9310FD4E93500C2DCC4 /* Books_Subset.dat */,
+				048AA7B50FD1D34300C2DCC4 /* Books_Subset.xml */,
+				047B0B4D0FC871FC005ED555 /* SIBL.dat */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				047B156D0FC96068005ED555 /* CharDetail.xib */,
+				047B15700FC9622C005ED555 /* QuoteDetail.xib */,
+				0444662A0FE759A000865103 /* SampleChapter.xib */,
+				04B698830FEBE31500C42293 /* MagicQuoteBall.xib */,
+				04C0121E0FFC728A00E5FA55 /* YCQMImageSelection.xib */,
+				04235222100A258A0015DA41 /* BookSearchPicker.xib */,
+				04CB800E101A838900E5AD92 /* ExploreTheWorld.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04CB8014101A851F00E5AD92 /* MapKit.framework */,
+				04C01418100170E000E5FA55 /* MessageUI.framework */,
+				04C011910FFC685B00E5FA55 /* QuartzCore.framework */,
+				04078E0C0FF6C3E90058A85C /* CoreLocation.framework */,
+				040F12850FEEE65C00A4BCAA /* MediaPlayer.framework */,
+				040F12810FEEE65100A4BCAA /* AudioToolbox.framework */,
+				040F127D0FEEE64600A4BCAA /* AVFoundation.framework */,
+				040F122C0FEEE62C00A4BCAA /* CoreGraphics.framework */,
+				040F121E0FEEE5D600A4BCAA /* Foundation.framework */,
+				040F11DB0FEEE5B500A4BCAA /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* BiblioPhile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BiblioPhile" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiblioPhile;
+			productName = BiblioPhile;
+			productReference = 1D6058910D05DD3D006BFB54 /* BiblioPhile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BiblioPhile" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* BiblioPhile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				047B0B4E0FC871FC005ED555 /* SIBL.dat in Resources */,
+				047B156E0FC96068005ED555 /* CharDetail.xib in Resources */,
+				047B15710FC9622C005ED555 /* QuoteDetail.xib in Resources */,
+				048AA7B60FD1D34300C2DCC4 /* Books_Subset.xml in Resources */,
+				048AA9320FD4E93500C2DCC4 /* Books_Subset.dat in Resources */,
+				048AA96D0FD7610C00C2DCC4 /* Books_Subset.plist in Resources */,
+				0444662B0FE759A000865103 /* SampleChapter.xib in Resources */,
+				0444695D0FE8698600865103 /* Atlas_Shrugged.JPG in Resources */,
+				0444695E0FE8698600865103 /* Dune.JPG in Resources */,
+				0444695F0FE8698600865103 /* Ender's_Game.jpg in Resources */,
+				044469600FE8698600865103 /* The_Count_of_Monte_Cristo.JPG in Resources */,
+				044469610FE8698600865103 /* War_and_Peace.JPG in Resources */,
+				044469680FE8699D00865103 /* Atlas_Shrugged.txt in Resources */,
+				044469690FE8699D00865103 /* Dune.txt in Resources */,
+				0444696A0FE8699D00865103 /* Ender's_Game.txt in Resources */,
+				0444696B0FE8699D00865103 /* The_Count_of_Monte_Cristo.txt in Resources */,
+				0444696C0FE8699D00865103 /* War_and_Peace.txt in Resources */,
+				0444697F0FE86A9400865103 /* Atlas_Shrugged.JPG in Resources */,
+				044469800FE86A9400865103 /* Dune.JPG in Resources */,
+				044469810FE86A9400865103 /* Enders_Game.jpg in Resources */,
+				044469820FE86A9400865103 /* The_Count_of_Monte_Cristo.JPG in Resources */,
+				044469830FE86A9400865103 /* War_and_Peace.JPG in Resources */,
+				044469890FE86AAF00865103 /* Atlas_Shrugged.txt in Resources */,
+				0444698A0FE86AAF00865103 /* Dune.txt in Resources */,
+				0444698B0FE86AAF00865103 /* Enders_Game.txt in Resources */,
+				0444698C0FE86AAF00865103 /* The_Count_of_Monte_Cristo.txt in Resources */,
+				0444698D0FE86AAF00865103 /* War_and_Peace.txt in Resources */,
+				04B698840FEBE31500C42293 /* MagicQuoteBall.xib in Resources */,
+				04C0117F0FFC678800E5FA55 /* bn_logo_small.gif in Resources */,
+				04C0121F0FFC728A00E5FA55 /* YCQMImageSelection.xib in Resources */,
+				04C012C50FFEA73F00E5FA55 /* camera1.wav in Resources */,
+				04C0159E1005B10B00E5FA55 /* BBL_Africa.plist in Resources */,
+				04C0159F1005B10B00E5FA55 /* BBL_Asia.plist in Resources */,
+				04C015A01005B10B00E5FA55 /* BBL_Australia.plist in Resources */,
+				04C015A11005B10B00E5FA55 /* BBL_Europe_East.plist in Resources */,
+				04C015A21005B10B00E5FA55 /* BBL_Europe_West.plist in Resources */,
+				04C015A31005B10B00E5FA55 /* BBL_Middle_East.plist in Resources */,
+				04C015A41005B10B00E5FA55 /* BBL_Other.plist in Resources */,
+				04C015A51005B10B00E5FA55 /* BBL_South_America.plist in Resources */,
+				04C015A61005B10B00E5FA55 /* BBL_US_Atlantic_North.plist in Resources */,
+				04C015A71005B10B00E5FA55 /* BBL_US_Atlantic_South.plist in Resources */,
+				04C015A81005B10B00E5FA55 /* BBL_US_Central.plist in Resources */,
+				04C015A91005B10B00E5FA55 /* BBL_US_Mountain.plist in Resources */,
+				04C015AA1005B10B00E5FA55 /* BBL_US_Pacific.plist in Resources */,
+				0423522110079F350015DA41 /* GIBL.dat in Resources */,
+				04235223100A258A0015DA41 /* BookSearchPicker.xib in Resources */,
+				042352D9100C46850015DA41 /* GIBL.plist in Resources */,
+				04449C181012954F00D23F82 /* Sample_Books.Categories.dat in Resources */,
+				04449E2A1013DFCF00D23F82 /* antagonist.jpg in Resources */,
+				04449E2C1013DFDE00D23F82 /* battle.jpg in Resources */,
+				04449E2E1013DFF400D23F82 /* book.png in Resources */,
+				04449E301013E00600D23F82 /* protagonist.jpg in Resources */,
+				04449F091015E46F00D23F82 /* parthenon_icon.png in Resources */,
+				04449F0B1015E48100D23F82 /* hearst_building.png in Resources */,
+				04CB800F101A838900E5AD92 /* ExploreTheWorld.xib in Resources */,
+				04CB80A0101CADDB00E5AD92 /* CBBL_Sample.plist in Resources */,
+				04CB80A2101CADEF00E5AD92 /* PBBL_Sample.plist in Resources */,
+				049D4A7010F3D12D00EF461E /* Books.MoreQuotes.xml in Resources */,
+				049D4C0510F69DCB00EF461E /* All_Books.plist in Resources */,
+				049D4C9910F7DAA000EF461E /* SIBL.001.dat in Resources */,
+				049D4CA610F7DBF600EF461E /* SIBL_By_Book.plist in Resources */,
+				049D4CA710F7DBF600EF461E /* SIBL_By_Performer.plist in Resources */,
+				04AC69871108173D007196AD /* Bibliophile_Icon_New.png in Resources */,
+				04AC6A9E110D0497007196AD /* Entitlements.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* BiblioPhileAppDelegate.m in Sources */,
+				047B0B4C0FC86E61005ED555 /* FileParser.m in Sources */,
+				047B14B70FC8B621005ED555 /* RootViewController.m in Sources */,
+				047B14FC0FC8BBBF005ED555 /* SecondLevelViewController.m in Sources */,
+				047B15550FC9080F005ED555 /* BookSelectionController.m in Sources */,
+				047B15580FC90896005ED555 /* BookTraitsController.m in Sources */,
+				047B155E0FC908F3005ED555 /* BookQuotesController.m in Sources */,
+				047B15610FC9092F005ED555 /* BookCharsController.m in Sources */,
+				047B15640FC90945005ED555 /* BookCharDetailsController.m in Sources */,
+				047B15670FC9095B005ED555 /* BookQuoteDetailsController.m in Sources */,
+				044466280FE7583100865103 /* SampleChapterController.m in Sources */,
+				0444669B0FE8249A00865103 /* MyLibraryViewController.m in Sources */,
+				04B698800FEBE03700C42293 /* MagicQuoteBall.m in Sources */,
+				040F0B9C0FED89FB00A4BCAA /* SIBLByRefSelector.m in Sources */,
+				040F0BC80FED8EAE00A4BCAA /* SIBLByBookController.m in Sources */,
+				040F0BCB0FED8ED400A4BCAA /* SIBLByPerformerController.m in Sources */,
+				040F0EA40FEEC60300A4BCAA /* SIBLByFoundSongController.m in Sources */,
+				04078D180FF496790058A85C /* LocationMenuController.m in Sources */,
+				04078D1B0FF496B50058A85C /* AllBookLocationsController.m in Sources */,
+				04078D1E0FF496DD0058A85C /* BooksByCurrentLocationController.m in Sources */,
+				04C011230FFC5DE500E5FA55 /* YCQMPickQuoteController.m in Sources */,
+				04C011820FFC67CA00E5FA55 /* YCQMImageSelection.m in Sources */,
+				04235239100A2C730015DA41 /* BookSearchController.m in Sources */,
+				042352DC100C46D70015DA41 /* GIBLSelectionController.m in Sources */,
+				04449B37100EEB3B00D23F82 /* BookSearchGenericController.m in Sources */,
+				04449CAC1013BB9C00D23F82 /* BookSearchResultsController.m in Sources */,
+				04CB8013101A84DC00E5AD92 /* ExploreTheWorldController.m in Sources */,
+				04CB8115101D37F900E5AD92 /* ETWAnnotationView.m in Sources */,
+				04CB81D8101E957600E5AD92 /* ETWMapView.m in Sources */,
+				04CB822A101EBCFB00E5AD92 /* ETWSearchResultsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04AC6A91110CFB17007196AD /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Aaron Kendall";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C5DA8F6E-08C4-47A8-B274-0571FAE09C81";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Distribution;
+		};
+		04AC6A92110CFB17007196AD /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Aaron Kendall";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BiblioPhile_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = BiblioPhile;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C5DA8F6E-08C4-47A8-B274-0571FAE09C81";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Distribution;
+		};
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Aaron Kendall";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BiblioPhile_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = BiblioPhile;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "15349A66-21FE-4E1C-BA0D-4B36BB1197F4";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Aaron Kendall";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BiblioPhile_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = BiblioPhile;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "15349A66-21FE-4E1C-BA0D-4B36BB1197F4";
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BiblioPhile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				04AC6A92110CFB17007196AD /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BiblioPhile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				04AC6A91110CFB17007196AD /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
