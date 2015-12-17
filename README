@@ -1,16 +1,13 @@
-##  Copyright (c) 2009-2013 Aaron Kendall
-##
-##  Licensed under the Apache License, Version 2.0 (the "License");
-##  you may not use this file except in compliance with the License.
-##  You may obtain a copy of the License at
-##
-##      http://www.apache.org/licenses/LICENSE-2.0
-##
-##  Unless required by applicable law or agreed to in writing, software
-##  distributed under the License is distributed on an "AS IS" BASIS,
-##  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-##  See the License for the specific language governing permissions and
-##  limitations under the License.
-##
-## See accompanying file LICENSE or visit the overall project at:
-## http://www.facebook.com/pages/First-Domino/407777872602119
+#Bibliophile (for iOS)
+Bibliophile+ is an iOS mobile application (mainly intended for phones) that was intended for the use of bibliophiles, 
+especially those that were interested in how books influenced and reflected the world around them.  From inspiring songs to
+showcasing physical locations, the goal of the app was to serve as an interactive encyclopedia for such trivia.
+
+# Notices
+The trivia data itself has been omitted from the project, since I would prefer to keep that separate.
+
+# Getting Started
+These page(s) will help to provide a better understanding of the app:
+* <a target="_blank" href="https://github.com/jaerith/Bibliophile_iOS/tree/master/Screenshots">Screenshots</a>
+
+Copyright © 2009-2015 Aaron Kendall under the <a target="_blank" href="https://github.com/jaerith/Bibliophile_iOS/blob/master/LICENSE">Apache License</a>.9-2015 Aaron Kendall under the <a target="_blank" href="https://github.com/jaerith/Bibliophile_iOS/blob/master/LICENSE">Apache License</a>.
