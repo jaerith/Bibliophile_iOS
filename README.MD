@@ -9,5 +9,6 @@ The trivia data itself has been omitted from the project, since I would prefer t
 # Getting Started
 These page(s) will help to provide a better understanding of the app:
 * <a target="_blank" href="https://github.com/jaerith/Bibliophile_iOS/tree/master/Screenshots">Screenshots</a>
+
 <br/>
 Copyright © 2009-2015 Aaron Kendall under the <a target="_blank" href="https://github.com/jaerith/Bibliophile_iOS/blob/master/LICENSE">Apache License</a>.
